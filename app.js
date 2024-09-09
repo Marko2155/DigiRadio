@@ -3,7 +3,7 @@ const app = express()
 const port = 80
 
 app.get('/', function(req, res) {
-	res.sendFile("/Users/mcamandioti/digi-radio/currentlyplaying.mp3")
+	res.sendFile(__dirname + "/currentlyplaying.mp3")
 })
 
 
